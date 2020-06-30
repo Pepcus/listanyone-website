@@ -326,7 +326,7 @@
           </article>
           <article class="col-sm-4 col-sm-push-3">
             <div class="cards4__card-image second">
-              <img src="./assets/images/2-mail.PNG" alt="">
+              <img src="./assets/images/2-mail.png" alt="">
             </div>
             <h3>OnBoarding</h3>
             <p>Use our private registration link for on boarding your members</p>
@@ -335,7 +335,38 @@
       </div>
     </div>
   </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Keep in Touch</h2>
+      </div>
+      <div class="contact-container">
+        <form id="contact_form" name="cform" class="clearfix"  method="post">
+          <!-- Left Inputs -->
+          <div class="col-xs-12 left">
+            <!-- Email -->
+            <span class="email-missing">Please enter your E-mail</span>
+            <input type="text" name="email" id="email" class="form" autocomplete="off" placeholder="E-MAIL" >
+          </div>
+          <!-- End Left Inputs -->
+          <!-- Right Text Area -->
+          <div class="col-xs-12 right">
+            <!-- Message -->
+            <span class="message-missing">Please enter your Message</span>
+            <textarea name="comment" id="comment"  class="form" placeholder="YOUR MESSAGE"></textarea>
 
+          </div>
+          <!-- End Right Text Area -->
+          <!-- Send Button -->
+          <div class="col-xs-12">
+            <!-- Button -->
+            <button type="submit" id="submit" name="submit" class="form contact-form-button">SEND EMAIL</button>
+          </div>
+          <!-- End Send Button -->
+        </form>
+      </div>
+    </div>
+  </section>
   <div id="page_footer" class="footer group">
     <div class="footer_inner">
       <div class="col-50 copyright">
@@ -355,8 +386,43 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   <script src="https://rawgit.com/rstacruz/jquery.transit/master/jquery.transit.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("user_piNGO9Jt39e9rFxCicKNT");
+
+      var myForm = $("form#contact_form");
+      myForm.submit(function (e) {
+        e.preventDefault();
+        // Change to your service ID, or keep using the default service
+        var service_id = "default_service";
+        var template_id = "listanyone";
+        $('#submit').prop('disabled',true);
+        myForm.find("button").text("Sending...");
+        emailjs.sendForm(service_id,template_id,myForm[0])
+          .then(function(){
+            bootbox.alert({
+              message: "Thank you for contacting us – we will get back to you soon!",
+              backdrop: true,
+              className: 'rubberBand animated'
+            });
+            myForm.find("input").val("");
+            myForm.find("textarea").val("");
+            myForm.find("button").text("Send");
+            $('#submit').prop('disabled',false);
+          }, function(err) {
+            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            myForm.find("button").text("Send");
+          });
+        return false;
+      });
+    })();
+  </script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
