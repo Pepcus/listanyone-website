@@ -1,0 +1,96 @@
+//transform mixin
+//Ex:
+//@include transform (rotate(20deg));
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+//transform-origin mixin
+//Ex:
+//@include transform-origin (0 100%);
+
+@mixin transformOrigin($property) {
+  -webkit-transform-origin: $property;
+  -ms-transform-origin: $property;
+  transform-origin: $property;
+}
+
+
+
+
+//transition mixin
+//Ex:
+//@include transition (all .3s ease-out);
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+
+
+
+
+//box-shadow mixin
+//Ex:
+//@include box-shadow (0 2px 4px 0 rgba(25,29,36,.08));
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+}
+
+//box-shadow mixin
+//Ex:
+//@include column-count (2);
+
+@mixin column-count($property) {
+  -webkit-column-count: $property;
+  -moz-column-count: $property;
+  column-count: $property;
+}
+
+
+//box-shadow mixin
+//Ex:
+//@include column-gap (15px);
+
+@mixin column-gap($property) {
+  -webkit-column-gap: $property;
+  -moz-column-gap: $property;
+  column-gap: $property;
+}
+
+//flex-flow mixin
+//Ex:
+//@include flex-flow (row);
+
+@mixin flex-flow($property) {
+  -webkit-flex-flow: $property;
+  -ms-flex-flow: $property;
+  flex-flow: $property;
+}
+
+//flex-flow mixin
+//Ex:
+//@include flex (1);
+
+@mixin flex($property) {
+  -webkit-flex: $property;
+  -ms-flex: $property;
+  flex: $property;
+}
+
+//box-sizing mixin
+//Ex:
+//@include box-sizing (border-box);
+
+@mixin box-sizing($property) {
+  -webkit-box-sizing: $property;
+  -ms-box-sizing: $property;
+  box-sizing: $property;
+}

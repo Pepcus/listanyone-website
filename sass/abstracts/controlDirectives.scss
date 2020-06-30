@@ -1,0 +1,48 @@
+//heading size Directive
+//Ex:
+//@include heading(large);
+
+@mixin heading($size) {
+  @if $size == large {
+    font-size: 4rem;
+  }
+  @else if $size == medium{
+    font-size: 3rem;
+  }
+  @else if $size == small {
+    font-size: 2rem;
+  }
+  @else {
+    font-size: 1rem;
+  }
+}
+
+//for loop Directive
+//Ex:
+//.list-1 {
+//  margin-left: 2px;
+//}
+//
+//.list-2 {
+//  margin-left: 4px;
+//}
+//
+//.list-3 {
+//  margin-left: 6px;
+//}
+//
+//.list-4 {
+//  margin-left: 8px;
+//}
+//
+//.list-5 {
+//  margin-left: 10px;
+//}
+
+@for $i from 1 through 5 {
+  .list-#{$i} {
+    width: 2px * $i;
+  }
+}
+
+

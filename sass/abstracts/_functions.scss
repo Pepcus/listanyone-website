@@ -1,0 +1,7 @@
+//divide function
+//Ex:
+//padding: divide(80, 2) * 3px;
+
+@function divide($a, $b) {
+  @return $a / $b;
+}
