@@ -5,8 +5,10 @@ $(function() {
     scroll = $(window).scrollTop();
     if (scroll >= 500) {
       $("#header").addClass("darkHeader");
+      $("body").addClass("headerScroll")
     } else {
       $("#header").removeClass("darkHeader");
+      $("body").removeClass("headerScroll")
     }
     // Here You can add your conditions according to your requirments
     if (scroll >= 1500) {
@@ -15,6 +17,9 @@ $(function() {
       s.removeClass("active");
     }
   });
+
+
+
   $("#mobile-expertise-carousel").owlCarousel({
     responsive: {
       0: {
@@ -88,8 +93,7 @@ $(function() {
 // }
 
 
-$(function() {
-
-
-
+$(".scroll-top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
 });

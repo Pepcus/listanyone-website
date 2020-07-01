@@ -153,7 +153,6 @@
 
 .banner-page {
   height: 100%;
-  min-height: 768px;
   position: relative;
   //background: url(//res.wx.qq.com/a/wx_fed/wechat-main-page-oversea/res/static/img/3cBQnDIp2EgSXSBL63MSClIDLoFbew1ygXJy6OxmqUEfvjgxaElbuilGY9ihEe50JN3FvIcjL4djHmNOIQCbX6.jpg) no-repeat center;
   background: url("../assets/images/banner-bg.jpg");
@@ -262,13 +261,10 @@
 }
 
 
-
-
-
 .cards {
   margin-top: 74px;
   @media (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .cards-row {
     display: flex;
@@ -515,7 +511,7 @@
           top: 100%;
           width: 100%;
           filter: grayscale(0);
-          color: #ad2f4e;
+          color: #6173f1;
         }
       }
     }

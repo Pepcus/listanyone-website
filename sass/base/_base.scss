@@ -108,17 +108,17 @@ a:link {
       width: 100%;
     }
     .section-title__dark {
-      color: #ad2f4e;
+      color: $primary;
     }
     h2 {
       font-size: 42px;
       line-height: 70px;
       font-weight: 300;
       text-transform: uppercase;
-      margin: 0;
+      margin: 0 auto;
       position: relative;
       @media (max-width: 767px) {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 39px;
       }
     }
