@@ -1,0 +1,126 @@
+//Base: contained within this file are all your resets, variables, mixins, and any utility classes.
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 18px;
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+
+::selection {
+  background: #ff0000;
+  color: #fff;
+  text-shadow: none;
+}
+
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.row:after, .row:before {
+  content: " ";
+  display: table;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-v-align  {
+  display: flex;
+  align-items: center;
+}
+
+.flex-h-align  {
+  display: flex;
+  justify-content: center;
+}
+
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.section-dark {
+    background-color: #f7f7f7;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    .section-title__dark {
+      color: $primary;
+    }
+    h2 {
+      font-size: 42px;
+      line-height: 70px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0 auto;
+      position: relative;
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 39px;
+      }
+    }
+  }
+}

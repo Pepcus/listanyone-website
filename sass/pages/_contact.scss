@@ -1,0 +1,122 @@
+.contact-container {
+  max-width: 970px;
+  margin: 0 auto;
+  span {
+    display: none;
+    font-size: 12px;
+    line-height: 30px;
+    color: red;
+  }
+  form .form {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 12px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+  .light-form {
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+  }
+  .light {
+    font-weight: 100;
+  }
+  form button.contact-form-button {
+    margin-bottom: 0;
+  }
+}
+
+.modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  .modal-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      flex: 1 1 auto;
+      padding: 1.75rem;
+      .close {
+        float: right;
+        font-size: 1.40625rem;
+        font-weight: 100;
+        line-height: 1;
+        color: #000;
+        text-shadow: none;
+        filter: alpha(opacity=20);
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.5rem 0.75rem;
+        z-index: 1;
+      }
+      .close:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+    }
+    .modal-footer {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      padding: 1rem 1.75rem;
+      border-top: 1px solid #f1f2f3;
+      .btn {
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        line-height: 1.9;
+        border-radius: 0.25rem;
+        font-size: 11px;
+        padding: 8px 26px 6px;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+        border-radius: 2px;
+        outline: none;
+        -webkit-transition: 0.15s linear;
+        transition: 0.15s linear;
+        cursor: pointer;
+        &.btn-primary {
+          color: #fff;
+          border: 1px solid;
+          background: #6173f1;
+          font-size: 14px;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+}

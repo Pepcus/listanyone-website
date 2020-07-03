@@ -1,0 +1,28 @@
+{
+  "name": "listanyone-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --watch sass/main.scss css/style.css",
+    "compile-sass": "node-sass  sass/main.scss css/style.css",
+    "test": ""
+  },
+  "author": "ListAnyOne",
+  "license": "ISC",
+  "description": "ListAnyOne Website.",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "sass-watch": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pepcus/pepcus-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pepcus/pepcus-web/issues"
+  },
+  "homepage": "https://github.com/Pepcus/pepcus-web#readme"
+}
