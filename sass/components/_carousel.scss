@@ -1,0 +1,145 @@
+
+.phone-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  .phone-container__content {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+    .col-phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 767px) {
+        order: 2;
+      }
+    }
+    .col-content {
+      @media (max-width: 767px) {
+        position: relative;
+        top: 80px;
+      }
+      h2 {
+        font-size: 42px;
+        line-height: 60px;
+        color: #fff;
+        width: 400px;
+        font-weight: 300;
+        @media (max-width: 767px) {
+          font-size: 28px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.phone {
+  width: 324px;
+  height: 661px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('https://www.dropbox.com/s/a8u5x8ji32xicwj/1.png?dl=0&raw=1');
+  //background-image: url('../assets/images/blank mobile-size.png');
+  background-image: url('../assets/images/desk.png');
+
+  transform: scale(0.70);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.screen {
+  background-color: #000;
+  position: absolute;
+  width: 284px;
+  height: 505px;
+  top: 77px;
+  left: 20px;
+  overflow: hidden;
+}
+
+.reel {
+  position: relative;
+  width: calc(200% + 10px);
+  height: 100%;
+  will-change: transform;
+}
+
+.screenshot {
+  display: inline-block;
+  position: relative;
+  width: 288px;
+  height: 505px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+
+.pass1{
+  background-image: url('https://www.dropbox.com/s/u4l9cd6kspsgpft/45day.jpg?dl=0&raw=1');
+  background-image: url('../assets/images/carousel/dash-lg.jpg');
+}
+
+.pass2 {
+  //background-image: url('https://www.dropbox.com/s/2raeeaa5y61whom/21day.jpg?dl=0&raw=1');
+  background-image: url('../assets/images/carousel/list-lg.png');
+}
+
+.pass3 {
+  //background-image: url('https://www.dropbox.com/s/4nrjk60hfwwp6dt/30day.jpg?dl=0&raw=1');
+  background-image: url('../assets/images/carousel/detail-lg.png');
+}
+
+.pass4 {
+  //background-image: url('https://www.dropbox.com/s/2dpzge06cchkyik/21day%402x.jpg?dl=0&raw=1');
+  background-image: url('../assets/images/carousel/birth-lg.png');
+}
+
+
+.pass1, .pass2, .pass3 {
+  background-size: 100%;
+}
+
+
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+
+  .phone {
+    //background-image: url('https://www.dropbox.com/s/t217jq0k4fufpyk/1%402x.png?dl=0&raw=1');
+    //background-image: url('../assets/images/desk-11.png');
+    background-image: url('../assets/images/mobil.png');
+    transform: scale(0.65);
+  }
+
+
+
+  .pass1 {
+    ///background-image: url('https://www.dropbox.com/s/svzhosyts09z09h/45day%402x.jpg?dl=0&raw=1');
+    background-image: url('../assets/images/carousel/dash-xs.png');
+  }
+
+  .pass2 {
+    //background-image: url('https://www.dropbox.com/s/2dpzge06cchkyik/21day%402x.jpg?dl=0&raw=1');
+    background-image: url('../assets/images/carousel/list-lg.png');
+  }
+
+  .pass3 {
+    //background-image: url('https://www.dropbox.com/s/x2ti8c58nb015bz/30day%402x.jpg?dl=0&raw=1');
+    background-image: url('../assets/images/carousel/detail-xs.png');
+  }
+
+  .pass4 {
+    //background-image: url('https://www.dropbox.com/s/2dpzge06cchkyik/21day%402x.jpg?dl=0&raw=1');
+    background-image: url('../assets/images/carousel/birth-xs.png');
+  }
+
+}
+
+
