@@ -11,7 +11,7 @@ $(function() {
       $("body").removeClass("headerScroll")
     }
     // Here You can add your conditions according to your requirments
-    if (scroll >= 1500) {
+    if (scroll >= 800) {
       s.addClass("active");
     } else if (scroll >= 100) {
       s.removeClass("active");
