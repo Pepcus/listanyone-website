@@ -453,36 +453,40 @@ a:link {
     display: flex;
     flex-wrap: wrap; }
 
-.cards1__card {
-  width: 50%;
-  margin: 0 15px 30px;
-  padding: 30px 30px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-  text-align: left; }
-  @media (max-width: 768px) {
-    .cards1__card {
-      width: 100%; } }
-  .cards1__card ul li {
-    list-style: none;
-    padding-left: 47px;
-    position: relative;
-    margin-bottom: 24px;
-    line-height: 1.5; }
-    .cards1__card ul li:after {
-      content: "\f00c";
-      font-family: 'Line Awesome Free';
-      font-weight: bold;
-      font-size: 22px;
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #141414; }
-    .cards1__card ul li:before {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center; }
+.cards1__card-container {
+  display: flex; }
+  .cards1__card-container .cards1__card {
+    width: 50%;
+    margin: 0 15px 30px;
+    padding: 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: left; }
+    @media (max-width: 768px) {
+      .cards1__card-container .cards1__card {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px; } }
+    .cards1__card-container .cards1__card ul li {
+      list-style: none;
+      padding-left: 35px;
+      position: relative;
+      margin-bottom: 24px;
+      line-height: 1.5; }
+      .cards1__card-container .cards1__card ul li:after {
+        content: "\f00c";
+        font-family: 'Line Awesome Free';
+        font-weight: bold;
+        font-size: 20px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #141414; }
+      .cards1__card-container .cards1__card ul li:before {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; }
 
 .cards5__card {
   display: flex;
@@ -761,7 +765,8 @@ a:link {
         .phone-container .phone-container__content .col-content h2 {
           font-size: 28px;
           line-height: 40px;
-          text-align: center; } }
+          text-align: center;
+          width: 100%; } }
 
 .phone {
   width: 324px;
@@ -940,7 +945,7 @@ a:link {
           list-style: none;
           border-bottom: 1px solid;
           text-align: left;
-          padding: 0 20px 0 60px;
+          padding: 0 20px 0 55px;
           font-weight: 400;
           position: relative; }
           @media (max-width: 767px) {
@@ -952,7 +957,7 @@ a:link {
             content: "\f00c";
             font-family: 'Line Awesome Free';
             font-weight: bold;
-            font-size: 22px;
+            font-size: 20px;
             display: block;
             position: absolute;
             left: 20px;
@@ -960,7 +965,7 @@ a:link {
             color: #fffbfb; }
             @media (max-width: 767px) {
               .card-container .card_inner__content .text ul li:after {
-                font-size: 16px;
+                font-size: 20px;
                 left: 20px; } }
           .card-container .card_inner__content .text ul li:last-child {
             border-bottom: 1px solid transparent; }
@@ -1392,22 +1397,22 @@ a:link {
           line-height: 35px; }
       .cards12__card-container .cards12__card .cards12__card-wrapper .cards12__card-text {
         position: relative;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 30px; }
         .cards12__card-container .cards12__card .cards12__card-wrapper .cards12__card-text p {
           line-height: 25px;
-          font-size: 16px;
+          font-size: 15px;
           margin-bottom: 20px; }
         .cards12__card-container .cards12__card .cards12__card-wrapper .cards12__card-text ul li {
           list-style: none;
-          padding-left: 47px;
+          padding-left: 35px;
           position: relative;
           margin-bottom: 15px; }
           .cards12__card-container .cards12__card .cards12__card-wrapper .cards12__card-text ul li:after {
             content: "\f00c";
             font-family: 'Line Awesome Free';
             font-weight: bold;
-            font-size: 22px;
+            font-size: 20px;
             display: block;
             position: absolute;
             left: 0;
