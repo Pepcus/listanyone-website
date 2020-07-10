@@ -137,7 +137,7 @@
                 list-style: none;
                 border-bottom: 1px solid;
                 text-align: left;
-                padding: 0 20px 0 60px;
+                padding: 0 20px 0 55px;
                 font-weight: 400;
                 position: relative;
                 @media (max-width: 767px) {
@@ -149,14 +149,14 @@
                   content: "\f00c";
                   font-family: 'Line Awesome Free';
                   font-weight: bold;
-                  font-size: 22px;
+                  font-size: 20px;
                   display: block;
                   position: absolute;
                   left: 20px;
                   top: 0;
                   color: #fffbfb;
                   @media (max-width: 767px) {
-                    font-size: 16px;
+                    font-size: 20px;
                     left: 20px;
                   }
                 }
@@ -726,24 +726,24 @@
       }
       .cards12__card-text {
         position: relative;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 30px;
         p {
           line-height: 25px;
-          font-size: 16px;
+          font-size: 15px;
           margin-bottom: 20px;
         }
         ul {
           li {
             list-style: none;
-            padding-left: 47px;
+            padding-left: 35px;
             position: relative;
             margin-bottom: 15px;
             &:after {
               content: "\f00c";
               font-family: 'Line Awesome Free';
               font-weight: bold;
-              font-size: 22px;
+              font-size: 20px;
               display: block;
               position: absolute;
               left: 0;
@@ -759,7 +759,6 @@
         }
       }
     }
-
     &.no-border {
       border: 0 !important;
       height: auto;
